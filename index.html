@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>이다예 프로필</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "맑은 고딕", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5ff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: rgb(124, 61, 241);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        audio {
+            margin: 20px 0;
+        }
+
+        #card {
+            width: 400px;
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            padding: 25px;
+            margin: 30px auto;
+            animation: fadeInUp 1s ease-out;
+            transition: 0.3s;
+        }
+
+        #card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+        }
+
+        #container {
+            width: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            text-align: left;
+        }
+
+        #container h1 {
+            text-align: center;
+        }
+
+        .highlight {
+            color: #5a2fff;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .redtext {
+            color: rgb(64, 39, 255);
+            font-weight: bold;
+        }
+
+        .bluetext {
+            color: blue;
+        }
+
+        .profile {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+            border: 3px solid #eeeeff;
+        }
+
+        .info {
+            margin-top: 15px;
+            color: #666;
+        }
+
+        .info span {
+            display: inline-block;
+            background-color: #e0e0ff;
+            padding: 7px 12px;
+            border-radius: 15px;
+            margin: 6px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #eeeeff;
+            width: 25%;
+            color: #333;
+        }
+
+        ul {
+            margin-left: 25px;
+            line-height: 2;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>제가 가장 좋아하는 노래입니다!</h1>
+    <h2>이 노래를 들으면서 봐주세요!</h2>
+
+    <audio controls>
+        <source src="강남 tatoo.mp3" type="audio/mp3">
+        브라우저가 audio 태그를 지원하지 않습니다.
+    </audio>
+
+    <div id="card">
+        <h2 class="highlight">이다예</h2>
+
+        <p>
+            안녕하세요! 저는 <span class="highlight">만능 엔터테이너</span>입니다.<br>
+            모두에게 즐거움을 주고 싶어요! 💙
+        </p>
+
+        <div class="info">
+            <p><strong>활동:</strong></p>
+            <span>인스타</span>
+            <span>틱톡</span>
+            <span>페이스북</span>
+        </div>
+    </div>
+
+    <div id="container">
+
+        <h1>My Profile 이다예</h1>
+
+        <img src="images/profile.jpg" alt="프로필 사진" class="profile">
+
+        <h2>자기소개</h2>
+        <p>
+            안녕하세요. 저는 <span class="redtext">이다예</span>입니다.
+            웹퍼블리싱 수업을 통해 HTML과 CSS를 배우고 있습니다.<br>
+            아직 기초 단계이지만 열심히 연습하며 저만의 웹페이지를 만들고 있습니다.
+        </p>
+
+        <h2>나의 정보</h2>
+        <table>
+            <tr>
+                <th>이름</th>
+                <td>이다예</td>
+            </tr>
+            <tr>
+                <th>MBTI</th>
+                <td>INTJ</td>
+            </tr>
+            <tr>
+                <th>장점</th>
+                <td>맡은 일을 끝까지 하려고 노력하고, 책임감이 있습니다.</td>
+            </tr>
+            <tr>
+                <th>단점</th>
+                <td>가끔 걱정이 많지만 계획을 세워 해결하려고 노력합니다.</td>
+            </tr>
+        </table>
+
+        <h2>좋아하는 것</h2>
+        <ul>
+            <li><span class="bluetext">야구보기</span></li>
+            <li><span class="bluetext">맛있는 것 먹기</span></li>
+            <li><span class="bluetext">새로운 것 배우기</span></li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
